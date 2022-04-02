@@ -132,6 +132,7 @@
     }
 
     .btn {
+        width: 100%;
         max-width: 364px;
         height: 61px;
         border-radius: 50px;
@@ -139,6 +140,7 @@
         color: #fff;
         font-family: 'Roboto', sans-serif;
         border: none;
+        font-weight: bold;
     }
 
     .disabled-button {
