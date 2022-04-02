@@ -1,3 +1,5 @@
+/* jshint esversion:9 */
+
 let selectedDish = null;
 let selectedDrink = null;
 let selectedDessert = null;
@@ -83,10 +85,6 @@ function selectItem(clickedElement){
         }
 
     }
-
-    console.log(selectedDish);
-    console.log(selectedDrink);
-    console.log(selectedDessert);
 
     if(selectedDish !== null && selectedDrink !== null && selectedDessert !== null){
 
