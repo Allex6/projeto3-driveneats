@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driven Eats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1 class="righteous">DrivenEats</h1>
+        <h6>Sua comida em 6 minutos</h6>
+    </div>
+
+    <div class="options-menu">
+
+        <h3 class="righteous category">Primeiro, seu prato</h3>
+
+        <div class="options flex dish-options">
+
+            <div onclick="selectItem(this)">
+                <img src="./img/frango_yin_yang_1.png" alt="">
+                <h4>Frango Yin Yang</h4>
+                <p>Um pouco de batata, um pouco de salada</p>
+                <h5>R$ 14,90</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/baiao.jpg" alt="">
+                <h4>Baião de 2</h4>
+                <p>Clássico no nordeste, principalmente na culinária cearense</p>
+                <h5>R$ 20,00</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/carne-de-sol-sertao.jpg" alt="">
+                <h4>Carne de Sol</h4>
+                <p>Uma das principais estrelas da culinária paraibana</p>
+                <h5>R$ 26,90</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/arroz-de-leite.webp" alt="">
+                <h4>Arroz de leite</h4>
+                <p>Prato típico em boa parte do nordeste</p>
+                <h5>R$ 8,50</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/farofa-de-cuscuz.jpg" alt="">
+                <h4>Farofa de cuscuz</h4>
+                <p>Cuscuz de farinha de milho, cozida no vapor</p>
+                <h5>R$ 7,50</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+        </div>
+
+        <h3 class="righteous category">Agora, sua bebida</h3>
+
+        <div class="options flex drink-options">
+
+            <div onclick="selectItem(this)">
+                <img src="./img/coquinha_gelada_1.png" alt="">
+                <h4>Coquinha gelada</h4>
+                <p>Lata 350ml</p>
+                <h5>R$ 4,90</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/guarana.webp" alt="">
+                <h4>Guaraná Antarctica</h4>
+                <p>Lata 350ml</p>
+                <h5>R$ 4,00</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/fanta-laranja.webp" alt="">
+                <h4>Fanta laranja</h4>
+                <p>Lata 350ml</p>
+                <h5>R$ 3,50</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+        </div>
+
+        <h3 class="righteous category">Por fim, sua sobremesa</h3>
+
+        <div class="options flex dessert-options">
+
+            <div onclick="selectItem(this)">
+                <img src="./img/pudim-1.png" alt="">
+                <h4>Pudim</h4>
+                <p>Apenas pudim</p>
+                <h5>R$ 7,90</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/chocolate-branco-2.webp" alt="">
+                <h4>Chocolate branco</h4>
+                <p>É chocolate sim :)</p>
+                <h5>R$ 5,00</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/mousse-de-morango.jpeg" alt="">
+                <h4>Mousse de morango</h4>
+                <p>Gelado</p>
+                <h5>R$ 6,90</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/sorvete.webp" alt="">
+                <h4>Sorvete de chocolate</h4>
+                <p>Gelado também</p>
+                <h5>R$ 3,25</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+            <div onclick="selectItem(this)">
+                <img src="./img/Torta-trufada.jpg" alt="">
+                <h4>Torta trufada</h4>
+                <p>Uma fatia apenas</p>
+                <h5>R$ 10,00</h5>
+                <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="checkout-btn-div">
+
+        <button class="btn disabled-button checkout-btn" onclick="checkout()">Selecione os 3 itens para fechar o pedido</button>
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
